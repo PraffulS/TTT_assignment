@@ -7,7 +7,9 @@ import re
 
 app = Flask(__name__)
 CORS(app)
-mongo = PyMongo(app)
+@app.route('/')
+def index():
+  return "welcome"
 @app.route('/tp', methods=['GET','OPTIONS'])
 def get_file():
   num = int(request.args.get('num'))
