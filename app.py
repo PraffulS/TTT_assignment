@@ -8,7 +8,9 @@ from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 CORS(app)
-mongo = PyMongo(app)
+@app.route('/')
+def welcome():
+  return "welcome to heroku app"
 @app.route('/tp', methods=['GET','OPTIONS'])
 def get_file():
   num = int(request.args.get('num'))
