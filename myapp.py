@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import jsonify
 from flask import request
+from flask import render_template
 import urllib
 import re
 
@@ -8,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return "welcome"
+  return render_template('index.html')
 @app.route('/tp', methods=['GET','OPTIONS'])
 def get_file():
   num = int(request.args.get('num'))
