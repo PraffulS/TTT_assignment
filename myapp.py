@@ -2,14 +2,15 @@ from flask import Flask
 from flask import jsonify
 from flask import request
 from flask import render_template
+from flask_cors import CORS
 import urllib
 import re
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/')
 def index():
-  return render_template('index.html')
+  return ("welcome")
 @app.route('/tp', methods=['GET','OPTIONS'])
 def get_file():
   num = int(request.args.get('num'))
