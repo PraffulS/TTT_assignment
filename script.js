@@ -11,7 +11,7 @@ app.controller("maincontroller", function($scope,$http) {
         $scope.flag = true
         $http({
         method: "GET",
-        url: "http://127.0.0.1:5000/tp?num="+$scope.num,
+        url: "https://ttt--assignment.herokuapp.com/?num="+$scope.num,
         dataType: 'json',
         crossDomain: true,
         headers: {
