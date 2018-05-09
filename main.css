@@ -964,19 +964,23 @@
 
 		table tbody tr {
 			border: solid 1px;
+
 			border-left: solid 3px;
 			border-right: solid 3px;
 		}
 
 		table td {
 			border: 1px;
+			text-align: center;
+			font-family: "Pacifico";
 			padding: 0.75em 0.75em;
 		}
 
 		table th {
-			font-size: 0.9em;
-			font-weight: 400;
-			padding: 0 0.75em 0.75em 0.75em;
+			font-size: 1.2em;
+			font-weight: 600;
+			font-family: "Pacifico";
+			padding: 0.75em 0.75em 0.75em 0.75em;
 			text-align: center;
 		}
 
