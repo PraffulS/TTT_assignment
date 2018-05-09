@@ -33,18 +33,18 @@
 							
 					
 					<center>
-					<table id="table-wrapper" align="center" style="width: 30%">
+					<table id="table-wrapper" align="center" style="width: 50%">
 							<thead>
 								<th><b><i>No.</th>
 								<th><b><i>Word</th>
-								<th><b><i>frequency count</th>
+								<th><b><i>Frequency count</th>
 							</thead>
 							<tbody>
 								<tr ng-repeat='x in data1'>
-									<td><b>{{ x.no }}</b></td>
-									<td><b>{{ x.key }}</b></td>
+									<td>{{ x.no }}</td>
+									<td>{{ x.key }}</td>
 									<td><center>
-									<b>{{ x.value }}</b>
+									{{ x.value }}
 									<i class="fa fa-arrow-up" style="font-size:20px;color:green"></i>
 									</center>
 									</td>
