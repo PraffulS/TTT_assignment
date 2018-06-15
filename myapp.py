@@ -34,7 +34,7 @@ def get_file():
     i = i - 1
     j = j + 1
   
-  return jsonify(list1)
+  return jsonify({'result':list1})
   
 
 if __name__ == '__main__':
